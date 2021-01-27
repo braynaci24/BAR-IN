@@ -27,7 +27,14 @@
         slidesToShow: 4,
         slidesToScroll: 4
       });
-    });
+    })
+    $(document).ready(function () {
+      $('.close').click(function () {
+        $('.contact').hide(1000);
+        $(this).hide();
+      })
+
+    })
   </script>
   <title>Document</title>
 </head>
@@ -47,6 +54,10 @@
         </div>
       </div><!-- end of .contanct-2-->
     </div><!-- end of .contact-->
+    <div class="close">
+      <a href="#">CLOSE</a>
+      <a href="#"><i class="fas fa-times"></i></a>
+    </div>
     <div class="container">
       <div class="header">
         <div>
@@ -63,7 +74,7 @@
               Mont, </a><a href="#">Terrex, </a><a href="#">Çanta, </a>
           </div>
         </div><!-- end of .header-button-->
-        <div class="extension">
+        <div class="extension border">
           <a href="#">Giriş Yap</a>
           <a href="#">Üye Ol</a>
           <i class="fas fa-shopping-cart"></i>
