@@ -29,14 +29,43 @@
       });
     })
     $(document).ready(function () {
+
       $('.close').click(function () {
-        $('.contact').hide(1000);
-        $(this).hide();
+        console.log(123213)
+        $('.contact').slideUp(1000);
+        $(this).slideUp();
+      })
+
+      $('.addBasket').click(function () {
+        var imgSrc = $(this).parent().find('img').attr('src')
+        var name = $(this).parent().find('span.product-name').text()
+        var price = $(this).parent().find('span.product-price').text()
+        /* var _basket = '<li>'
+        _basket += '<a class="market-link" href="#">'
+        _basket += '<img src="' + imgSrc + '">'
+        _basket += '<div class="name-price">'
+        _basket += '<span>' + name + '</span>'
+        _basket += '<span>' + price + '</span>'
+        _basket += '</div>'
+        _basket += '</a>'
+        _basket += '</li>' */
+
+
+        var _basket = `<li>
+                  <a class="market-link" href="#">
+                    <img src="${imgSrc}">
+                    <div class="name-price">
+                      <span>${name}</span>
+                      <span>${price}</span>
+                    </div>
+                  </a>
+                </li>`
+        $('.secret ul').append(_basket)
       })
 
     })
   </script>
-  <title>Document</title>
+  <title>BARÇIN</title>
 </head>
 
 <body>
@@ -75,14 +104,34 @@
           </div>
         </div><!-- end of .header-button-->
         <div class="extension border">
-          <a href="#">Giriş Yap</a>
-          <a href="#">Üye Ol</a>
+          <a class="login" href="#">Giriş Yap</a>
+          <a class="login" href="#">Üye Ol</a>
           <div class="market-place">
             <i class=" fas fa-shopping-cart"></i>
             <div class="secret">
+              <ul>
+                <!-- <li>
+                  <a class="market-link" href="#">
+                    <img src="images/back-2.png">
+                    <div class="name-price">
+                      <span>Nike Brasilia JDI Nike Brasilia JDI</span>
+                      <span>169,90 TL </span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="market-link" href="#">
+                    <img src="images/back-2.png">
+                    <div class="name-price">
+                      <span>Nike Brasilia JDI Nike Brasilia JDI</span>
+                      <span>169,90 TL </span>
+                    </div>
+                  </a>
+                </li> -->
+              </ul>
             </div>
           </div>
-          <span>0</span>
+          <span class="cart-count">0</span>
         </div><!-- end of .extension-->
       </div><!-- end of .header -->
     </div><!-- end of .container-->
@@ -405,50 +454,50 @@
   <div class="slider-2 container margin-cont">
     <div class="box-2">
       <img src="images/back.png">
-      <span>Nike Brasilia JDI Mini Boy...</span>
-      <span>169,90 TL</span>
-      <button>Sepete Ekle</button>
+      <span class="product-name">Nike Brasilia JDI Mini Boy...</span>
+      <span class="product-price">169,90 TL</span>
+      <button class="addBasket">Sepete Ekle</button>
     </div>
     <div class="box-2">
       <img src="images/back-2.png">
-      <span>Nike Brasilia JDI Mini Boy...</span>
-      <span>169,90 TL</span>
-      <button>Sepete Ekle</button>
+      <span class="product-name">Nike Brasilia JDI Mini Boy...</span>
+      <span class="product-price">169,90 TL</span>
+      <button class="addBasket">Sepete Ekle</button>
     </div>
     <div class="box-2">
       <img src="images/back-3.png">
-      <span>Nike Brasilia JDI Mini Boy...</span>
-      <span>169,90 TL</span>
-      <button>Sepete Ekle</button>
+      <span class="product-name">Nike Brasilia JDI Mini Boy...</span>
+      <span class="product-price">169,90 TL</span>
+      <button class="addBasket">Sepete Ekle</button>
     </div>
     <div class="box-2">
       <img src="images/back-4.png">
-      <span>Nike Brasilia JDI Mini Boy...</span>
-      <span>169,90 TL</span>
-      <button>Sepete Ekle</button>
+      <span class="product-name">Nike Brasilia JDI Mini Boy...</span>
+      <span class="product-price">169,90 TL</span>
+      <button class="addBasket">Sepete Ekle</button>
     </div>
     <div class="box-2">
       <img src="images/back.png">
-      <span>Nike Brasilia JDI Mini Boy...</span>
-      <span>169,90 TL</span>
-      <button>Sepete Ekle</button>
+      <span class="product-name">Nike Brasilia JDI Mini Boy...</span>
+      <span class="product-price">169,90 TL</span>
+      <button class="addBasket">Sepete Ekle</button>
     </div>
     <div class="box-2">
       <img src="images/back-2.png">
-      <span>Nike Brasilia JDI Mini Boy...</span>
-      <span>169,90 TL</span>
+      <span class="product-name">Nike Brasilia JDI Mini Boy...</span>
+      <span class="product-price">169,90 TL</span>
       <button>Sepete Ekle</button>
     </div>
     <div class="box-2">
       <img src="images/back-3.png">
-      <span>Nike Brasilia JDI Mini Boy...</span>
-      <span>169,90 TL</span>
+      <span class="product-name">Nike Brasilia JDI Mini Boy...</span>
+      <span class="product-price">169,90 TL</span>
       <button>Sepete Ekle</button>
     </div>
     <div class="box-2">
       <img src="images/back-4.png">
-      <span>Nike Brasilia JDI Mini Boy...</span>
-      <span>169,90 TL</span>
+      <span class="product-name">Nike Brasilia JDI Mini Boy...</span>
+      <span class="product-price">169,90 TL</span>
       <button>Sepete Ekle</button>
     </div>
   </div><!-- end of .container-->

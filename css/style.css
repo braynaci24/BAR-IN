@@ -129,7 +129,7 @@ body {
   display: flex;
   justify-content: space-around;
 }
-.extension a {
+.login {
   padding-right: 10px;
   display: flex;
   align-items: center;
@@ -147,7 +147,7 @@ body {
 .extension a:hover {
   color: #d4c508;
 }
-.extension span {
+.extension span.cart-count {
   width: 23px;
   height: 20px;
   background: #f7e832;
@@ -364,6 +364,7 @@ body {
   background: #fff;
   border: 1px solid #d4c508;
   color: #d4c508;
+  font-size: 20px;
 }
 .box-2 button:hover {
   background: #d4c508;
@@ -377,15 +378,57 @@ body {
   border-radius: 3px;
   z-index: 9;
   width: 300px;
-  height: 500px;
-  background: red;
+  background: #323231;
   position: absolute;
   top: 40px;
   right: 0px;
+  
 }
 .market-place {
   position: relative;
 }
 .market-place:hover .secret{
   display: block;
+}
+.secret ul li a img {
+  margin-right: 12px;
+}
+.secret ul li {
+  padding: 10px 10px;
+  border-bottom: 1px solid #ffffff;
+}
+.secret ul li:last-child {
+  border-bottom: 0;
+}
+.secret ul li a {
+  display: flex;
+  justify-content: space-around;
+}
+.name-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: right;
+}
+.name-price span {
+  padding-right: 5px;
+  font-size: 20px;
+  color: #fff;
+}
+.market-link {
+  text-decoration: none;
+}
+.secret ul li h3 {
+  padding-top: 40px;
+  font-size: 18px;
+  color: #fff;
+}
+.name-price a button {
+  width: 200px;
+  height: 20px;
+  margin-top: 20px;
+}
+.name-price span button  {
+  width: 170px;
 }
