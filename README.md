@@ -1,8 +1,9 @@
-# BARÇIN Giyim Mağazası 🛒
+# E-Ticaret Anasayfası 🛒
 
-Ayakkabı ve Giyim mağazası
+Ayakkabı ve Giyim mağazası anasayfası
 
 https://barcin.netlify.app/
 
-*JQuery
-*Slick Carousel
+* Flexbox
+* JQuery
+* Slick Carousel
