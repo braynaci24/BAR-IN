@@ -4,6 +4,5 @@ Ayakkabı ve Giyim mağazası
 
 https://barcin.netlify.app/
 
-
 *JQuery
-*Slick
+*Slick Carousel
